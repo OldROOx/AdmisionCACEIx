@@ -9,6 +9,7 @@ import RegistrarDocente from './componentes/RegistrarDocente';
 import RegistrarPreparatoria from './componentes/RegistrarPreparatoria';
 import RegistroActividades from './componentes/RegistroActividades';
 import Reportes from './componentes/Reportes';
+import './App.css';
 
 function App() {
     const [currentPage, setCurrentPage] = useState('Dashboard');
