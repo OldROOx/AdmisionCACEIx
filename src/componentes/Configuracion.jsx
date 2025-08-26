@@ -198,24 +198,24 @@ const PerfilTab = ({ formData, handleInputChange, user }) => (
             </div>
         </div>
 
-        {/* Estadísticas del usuario */}
+        {/* Estadísticas del usuario simplificadas */}
         <div className="bg-white rounded-lg shadow border p-6">
             <h3 className="text-lg font-semibold mb-4">Mis Estadísticas</h3>
             <div className="grid grid-cols-4 gap-4">
                 <div className="text-center">
-                    <p className="text-2xl font-bold text-blue-600">24</p>
+                    <p className="text-2xl font-bold text-blue-600">0</p>
                     <p className="text-sm text-gray-600">Actividades este mes</p>
                 </div>
                 <div className="text-center">
-                    <p className="text-2xl font-bold text-green-600">342</p>
+                    <p className="text-2xl font-bold text-green-600">0</p>
                     <p className="text-sm text-gray-600">Estudiantes alcanzados</p>
                 </div>
                 <div className="text-center">
-                    <p className="text-2xl font-bold text-purple-600">8</p>
+                    <p className="text-2xl font-bold text-purple-600">0</p>
                     <p className="text-sm text-gray-600">Preparatorias visitadas</p>
                 </div>
                 <div className="text-center">
-                    <p className="text-2xl font-bold text-orange-600">95%</p>
+                    <p className="text-2xl font-bold text-orange-600">0%</p>
                     <p className="text-sm text-gray-600">Tasa de efectividad</p>
                 </div>
             </div>
@@ -328,7 +328,7 @@ const SistemaTab = () => (
                 </div>
                 <div className="flex justify-between">
                     <span className="text-gray-600">Almacenamiento Usado:</span>
-                    <span className="font-medium">2.3 GB de 10 GB</span>
+                    <span className="font-medium">0.1 GB de 10 GB</span>
                 </div>
             </div>
         </div>
@@ -458,33 +458,9 @@ const NotificacionesTab = ({ notifications, handleNotificationChange }) => (
         <div className="bg-white rounded-lg shadow border p-6">
             <h3 className="text-lg font-semibold mb-4">Historial de Notificaciones</h3>
 
-            <div className="space-y-3">
-                <div className="flex items-center p-3 bg-blue-50 rounded-lg">
-                    <span className="text-xl mr-3">📊</span>
-                    <div className="flex-1">
-                        <p className="font-medium text-sm">Reporte semanal generado</p>
-                        <p className="text-xs text-gray-500">hace 2 horas</p>
-                    </div>
-                    <span className="text-blue-600 text-xs">Enviado</span>
-                </div>
-
-                <div className="flex items-center p-3 bg-green-50 rounded-lg">
-                    <span className="text-xl mr-3">✅</span>
-                    <div className="flex-1">
-                        <p className="font-medium text-sm">Actividad de promoción completada</p>
-                        <p className="text-xs text-gray-500">hace 4 horas</p>
-                    </div>
-                    <span className="text-green-600 text-xs">Leído</span>
-                </div>
-
-                <div className="flex items-center p-3 bg-yellow-50 rounded-lg">
-                    <span className="text-xl mr-3">📅</span>
-                    <div className="flex-1">
-                        <p className="font-medium text-sm">Recordatorio: Evaluación programada mañana</p>
-                        <p className="text-xs text-gray-500">hace 6 horas</p>
-                    </div>
-                    <span className="text-yellow-600 text-xs">Pendiente</span>
-                </div>
+            <div className="flex flex-col items-center justify-center py-8 text-gray-500">
+                <span className="text-4xl mb-2">🔔</span>
+                <p className="text-sm">Sin notificaciones recientes</p>
             </div>
         </div>
     </div>
@@ -588,18 +564,6 @@ const SeguridadTab = () => (
                         </div>
                     </div>
                     <span className="text-green-600 text-xs">Activa</span>
-                </div>
-
-                <div className="flex items-center justify-between p-3 border rounded-lg">
-                    <div className="flex items-center">
-                        <span className="text-xl mr-3">📱</span>
-                        <div>
-                            <p className="font-medium text-sm">Safari en iPhone</p>
-                            <p className="text-xs text-gray-500">10.0.0.45 • Ciudad de México</p>
-                            <p className="text-xs text-gray-500">Última actividad: hace 2 días</p>
-                        </div>
-                    </div>
-                    <button className="text-red-600 text-sm hover:text-red-900">Cerrar</button>
                 </div>
             </div>
         </div>

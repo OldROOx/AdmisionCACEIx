@@ -47,161 +47,41 @@ const RegistroActividades = () => {
 
             {/* Resumen */}
             <div className="mb-4 flex justify-between items-center text-sm">
-                <p className="text-gray-600">Mostrando 4 de 4 registros</p>
+                <p className="text-gray-600">Sin registros encontrados</p>
                 <div className="flex space-x-4">
-                    <span className="text-green-600">3 Completadas</span>
-                    <span className="text-blue-600">1 Pendiente</span>
+                    <span className="text-green-600">0 Completadas</span>
+                    <span className="text-blue-600">0 Pendientes</span>
                     <span className="text-red-600">0 Canceladas</span>
                 </div>
             </div>
 
             {/* Lista de Actividades */}
-            <div className="space-y-4">
-                {/* Actividad 1 */}
-                <div className="bg-white rounded-lg shadow border p-6">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                            <span className="mr-4 text-xl">📚</span>
-                            <div className="flex-1">
-                                <div className="flex items-center mb-2">
-                                    <h3 className="text-lg font-semibold mr-3">Ingeniería en Sistemas</h3>
-                                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Completada</span>
-                                </div>
-                                <div className="grid grid-cols-2 gap-4 text-sm text-gray-500">
-                                    <div>
-                                        <p>Docente: Dr. Juan Martínez</p>
-                                        <p>Fecha: 2024-01-18</p>
-                                        <p>Duración: 1 hora</p>
-                                    </div>
-                                    <div>
-                                        <p>Preparatoria: CETIS No. 45</p>
-                                        <p>Estudiantes: 45</p>
-                                        <p>Tipo: Presentación</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <button className="text-gray-500">👁</button>
-                            <button className="text-gray-500">✏️</button>
-                            <button className="text-red-500">🗑</button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Actividad 2 */}
-                <div className="bg-white rounded-lg shadow border p-6">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                            <span className="mr-4 text-xl">🏭</span>
-                            <div className="flex-1">
-                                <div className="flex items-center mb-2">
-                                    <h3 className="text-lg font-semibold mr-3">Ingeniería Industrial</h3>
-                                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Completada</span>
-                                </div>
-                                <div className="grid grid-cols-2 gap-4 text-sm text-gray-500">
-                                    <div>
-                                        <p>Docente: Dra. Ana López</p>
-                                        <p>Fecha: 2024-01-17</p>
-                                        <p>Duración: 45 min</p>
-                                    </div>
-                                    <div>
-                                        <p>Preparatoria: CBTIS No. 12</p>
-                                        <p>Estudiantes: 32</p>
-                                        <p>Tipo: Taller</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <button className="text-gray-500">👁</button>
-                            <button className="text-gray-500">✏️</button>
-                            <button className="text-red-500">🗑</button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Actividad 3 */}
-                <div className="bg-white rounded-lg shadow border p-6">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                            <span className="mr-4 text-xl">🏗️</span>
-                            <div className="flex-1">
-                                <div className="flex items-center mb-2">
-                                    <h3 className="text-lg font-semibold mr-3">Ingeniería Civil</h3>
-                                    <span className="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Pendiente</span>
-                                </div>
-                                <div className="grid grid-cols-2 gap-4 text-sm text-gray-500">
-                                    <div>
-                                        <p>Docente: Dr. Carlos Ruiz</p>
-                                        <p>Fecha: 2024-01-20</p>
-                                        <p>Duración: 1.5 horas</p>
-                                    </div>
-                                    <div>
-                                        <p>Preparatoria: CONALEP No. 3</p>
-                                        <p>Estudiantes: 28</p>
-                                        <p>Tipo: Conferencia</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <button className="text-gray-500">👁</button>
-                            <button className="text-gray-500">✏️</button>
-                            <button className="text-red-500">🗑</button>
-                        </div>
-                    </div>
-                </div>
-
-                {/* Actividad 4 */}
-                <div className="bg-white rounded-lg shadow border p-6">
-                    <div className="flex items-center justify-between">
-                        <div className="flex items-center">
-                            <span className="mr-4 text-xl">💼</span>
-                            <div className="flex-1">
-                                <div className="flex items-center mb-2">
-                                    <h3 className="text-lg font-semibold mr-3">Administración</h3>
-                                    <span className="bg-green-100 text-green-800 px-2 py-1 rounded text-xs">Completada</span>
-                                </div>
-                                <div className="grid grid-cols-2 gap-4 text-sm text-gray-500">
-                                    <div>
-                                        <p>Docente: Dra. María González</p>
-                                        <p>Fecha: 2024-01-16</p>
-                                        <p>Duración: 1 hora</p>
-                                    </div>
-                                    <div>
-                                        <p>Preparatoria: CBTIS No. 23</p>
-                                        <p>Estudiantes: 38</p>
-                                        <p>Tipo: Presentación</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="flex space-x-2">
-                            <button className="text-gray-500">👁</button>
-                            <button className="text-gray-500">✏️</button>
-                            <button className="text-red-500">🗑</button>
-                        </div>
-                    </div>
+            <div className="bg-white rounded-lg shadow border p-6 mb-8">
+                <div className="flex flex-col items-center justify-center py-12 text-gray-500">
+                    <span className="text-6xl mb-4">📋</span>
+                    <p className="text-lg font-medium mb-2">Sin actividades registradas</p>
+                    <p className="text-sm text-center">
+                        Comience registrando una nueva actividad de promoción.
+                    </p>
                 </div>
             </div>
 
             {/* Estadísticas */}
-            <div className="grid grid-cols-4 gap-6 mt-8">
+            <div className="grid grid-cols-4 gap-6">
                 <div className="bg-white p-6 rounded-lg shadow border text-center">
-                    <p className="text-3xl font-bold text-gray-800">143</p>
+                    <p className="text-3xl font-bold text-gray-800">0</p>
                     <p className="text-gray-600 text-sm">Total Estudiantes Alcanzados</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow border text-center">
-                    <p className="text-3xl font-bold text-blue-600">4</p>
+                    <p className="text-3xl font-bold text-blue-600">0</p>
                     <p className="text-gray-600 text-sm">Preparatorias Visitadas</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow border text-center">
-                    <p className="text-3xl font-bold text-purple-600">4</p>
+                    <p className="text-3xl font-bold text-purple-600">0</p>
                     <p className="text-gray-600 text-sm">Docentes Participantes</p>
                 </div>
                 <div className="bg-white p-6 rounded-lg shadow border text-center">
-                    <p className="text-3xl font-bold text-green-600">75%</p>
+                    <p className="text-3xl font-bold text-green-600">0%</p>
                     <p className="text-gray-600 text-sm">Tasa de Éxito</p>
                 </div>
             </div>

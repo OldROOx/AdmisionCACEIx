@@ -15,17 +15,17 @@ const Dashboard = () => {
                         <h3 className="text-sm font-medium text-gray-600">Docentes Registrados</h3>
                         <span className="text-2xl">👨‍🏫</span>
                     </div>
-                    <p className="text-3xl font-bold text-blue-600">24</p>
-                    <p className="text-xs text-gray-500">+2 desde el mes pasado</p>
+                    <p className="text-3xl font-bold text-blue-600">0</p>
+                    <p className="text-xs text-gray-500">Sin registros</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow border">
                     <div className="flex items-center justify-between mb-2">
-                        <h3 className="text-sm font-medium text-gray-600">Preparatorias Visitadas</h3>
+                        <h3 className="text-sm font-medium text-gray-600">Preparatorias Registradas</h3>
                         <span className="text-2xl">🏫</span>
                     </div>
-                    <p className="text-3xl font-bold text-green-600">18</p>
-                    <p className="text-xs text-gray-500">+2 este mes</p>
+                    <p className="text-3xl font-bold text-green-600">0</p>
+                    <p className="text-xs text-gray-500">Sin registros</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow border">
@@ -33,8 +33,8 @@ const Dashboard = () => {
                         <h3 className="text-sm font-medium text-gray-600">Actividades de Promoción</h3>
                         <span className="text-2xl">📊</span>
                     </div>
-                    <p className="text-3xl font-bold text-purple-600">42</p>
-                    <p className="text-xs text-gray-500">+12 esta semana</p>
+                    <p className="text-3xl font-bold text-purple-600">0</p>
+                    <p className="text-xs text-gray-500">Sin registros</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg shadow border">
@@ -42,8 +42,8 @@ const Dashboard = () => {
                         <h3 className="text-sm font-medium text-gray-600">Estudiantes en Inducción</h3>
                         <span className="text-2xl">🎓</span>
                     </div>
-                    <p className="text-3xl font-bold text-orange-600">156</p>
-                    <p className="text-xs text-gray-500">+23% vs mes anterior</p>
+                    <p className="text-3xl font-bold text-orange-600">0</p>
+                    <p className="text-xs text-gray-500">Sin registros</p>
                 </div>
             </div>
 
@@ -93,30 +93,12 @@ const Dashboard = () => {
                 <h3 className="text-lg font-semibold mb-4">Actividad Reciente</h3>
                 <p className="text-gray-600 text-sm mb-4">Últimas acciones realizadas en el sistema</p>
 
-                <div className="space-y-3">
-                    <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <span className="mr-3 text-xl">👨‍🏫</span>
-                        <div className="flex-1">
-                            <p className="font-medium text-sm">Nuevo docente registrado</p>
-                            <p className="text-xs text-gray-500">Dr. María González • hace 2 horas</p>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <span className="mr-3 text-xl">🏫</span>
-                        <div className="flex-1">
-                            <p className="font-medium text-sm">Preparatoria visitada</p>
-                            <p className="text-xs text-gray-500">CETIS No. 45 • hace 4 horas</p>
-                        </div>
-                    </div>
-
-                    <div className="flex items-center p-3 bg-gray-50 rounded-lg">
-                        <span className="mr-3 text-xl">📝</span>
-                        <div className="flex-1">
-                            <p className="font-medium text-sm">Actividad de promoción registrada</p>
-                            <p className="text-xs text-gray-500">Presentación Ingeniería en Sistemas • hace 6 horas</p>
-                        </div>
-                    </div>
+                <div className="flex flex-col items-center justify-center py-12 text-gray-500">
+                    <span className="text-6xl mb-4">📊</span>
+                    <p className="text-lg font-medium mb-2">Sin actividad reciente</p>
+                    <p className="text-sm text-center">
+                        Comience registrando docentes, preparatorias y actividades de promoción.
+                    </p>
                 </div>
             </div>
         </div>
