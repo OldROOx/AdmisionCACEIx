@@ -1,3 +1,4 @@
+// src/App.jsx
 import React, { useState } from 'react';
 import Sidebar from './componentes/Sidebar';
 import Dashboard from './componentes/Dashboard';
@@ -31,34 +32,38 @@ function App() {
         setCurrentPage('Dashboard');
     };
 
+    const handlePageChange = (page) => {
+        setCurrentPage(page);
+    };
+
     const renderCurrentPage = () => {
         switch (currentPage) {
             case 'Dashboard':
-                return <Dashboard user={user} />;
+                return <Dashboard user={user} onNavigate={handlePageChange} />;
             case 'Promoción E.S.':
-                return <PromocionES/>;
+                return <PromocionES onNavigate={handlePageChange} />;
             case 'Control Asistencia':
-                return <ControlAsistencia />;
+                return <ControlAsistencia onNavigate={handlePageChange} />;
             case 'Evidencias Curso':
-                return <Evidencias />;
+                return <Evidencias onNavigate={handlePageChange} />;
             case 'Clases Nivelación':
-                return <Nivelacion />;
+                return <Nivelacion onNavigate={handlePageChange} />;
             case 'Registrar Actividad':
-                return <RegistrarActividad />;
+                return <RegistrarActividad onBack={() => setCurrentPage('Promoción E.S.')} />;
             case 'Registrar Docente':
-                return <RegistrarDocente />;
+                return <RegistrarDocente onBack={() => setCurrentPage('Promoción E.S.')} />;
             case 'Registrar Preparatoria':
-                return <RegistrarPreparatoria />;
+                return <RegistrarPreparatoria onBack={() => setCurrentPage('Promoción E.S.')} />;
             case 'Ver Registros':
-                return <RegistroActividades />;
+                return <RegistroActividades onNavigate={handlePageChange} />;
             case 'Inducción':
-                return <Induccion />;
+                return <Induccion onNavigate={handlePageChange} />;
             case 'Reportes':
-                return <Reportes />;
+                return <Reportes onNavigate={handlePageChange} />;
             case 'Configuración':
-                return <Configuracion user={user} />;
+                return <Configuracion user={user} onNavigate={handlePageChange} />;
             default:
-                return <Dashboard user={user} />;
+                return <Dashboard user={user} onNavigate={handlePageChange} />;
         }
     };
 
